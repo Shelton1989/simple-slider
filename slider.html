@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <!-- Link style sheets: Materialize is needed for the next and back icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="./slider.css">
+    </head>
+    <body>
+        <div style="height: 800px" id="slider-wrapper" class="slider-wrapper" onload="setInterval()">
+            <div id="slide-1" class="slide"></div>
+            <div id="slide-2" class="slide"></div>
+            <div id="slide-3" class="slide"></div>
+            <div id="slide-4" class="slide"></div>
+            <div id="slide-5" class="slide"></div>
+            <div class="buttons">
+                    <button id="back-button" onclick="handleBack()"><i class="medium material-icons">chevron_left</i></button>
+                    <button id="next-button" onclick="handleNext()"><i class="medium material-icons">chevron_right</i></button>
+            </div>
+        </div>
+
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script src="./slider.js"></script>
+    </body>
+</html>
